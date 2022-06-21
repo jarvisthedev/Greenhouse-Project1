@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purchase GreenHouse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="h1-class">Contact us</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html"> Home</a></li>
+          <li><a href="operation.html"> Operation</a></li>
+          <li><a href="pricing.html"> GreenHouse Pricing</a></li>
+          <li><a href="buy.html"> Buy</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form action="register.php" method="post">
+      <fieldset>
+        <legend>Personal information</legend>
+
+        <label for="first-name">First Name:</label>
+        <input
+          type="text"
+          name="text"
+          id="first-name"
+          required
+          autofocus
+        /><br />
+        <label for="last-name"> Last Name: </label>
+        <input type="text" name="last-name" id="last-name" required /><br />
+
+        <label for="email">Email :</label>
+        <input type="email" name="email" id="email" required /><br />
+
+        <label for="password">Password: </label>
+        <input type="password" name="Password" /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Order</legend>
+        <label for="radio"> Whats your request:</label>
+        <input class="checks" type="radio" name="radio" value="ch1" />Place an
+        order
+        <input class="checks" type="radio" name="radio" value="ch2" />
+        Request/query<br />
+
+        <label for="choise">Technology leve you need: </label>
+        <select name="choice" id="choice">
+          <option value="choice-all">all levels</option>
+          <option value="choice1">low technology</option>
+          <option value="choice2">middle technology</option>
+          <option value="choice3">High technology</option></select
+        ><br />
+        <label for="date">Expected delivery date:</label>
+        <input class="checks" type="date" name="date" id="date" /><br />
+        <label for="range">Price range: </label> 100$<input
+          class="checks"
+          type="range"
+          name="range"
+          min="100"
+          max="100000"
+          value="100"
+          id="range"
+        />100000$<br />
+      </fieldset>
+      <fieldset>
+        <legend>Requests and complains</legend>
+        Name:
+        <input type="name" name="Name" /><br />
+        Complains and requests:<br />
+
+        <textarea name="request" id="request" cols="30" rows="10"></textarea>
+      </fieldset>
+      <input class="checks" type="submit" value="send" id="submit-button" />
+    </form>
+  </body>
+</html>
